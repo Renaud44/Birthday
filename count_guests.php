@@ -21,7 +21,7 @@ if ($resultat) {
     $nombreTotal = $donnees['totalGuests'];
     echo $nombreTotal;
 } else {
-    echo "Erreur lors de la récupération du nombre total d'invités : " . $mysqli->error;
+    echo "Erreur lors de la récupération du nombre total d'invités : " . $connection->error;
 }
 
 // Fermer la connexion à la base de données
