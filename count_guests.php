@@ -8,7 +8,7 @@ $connection = new mysqli($host, $user, $password, $database);
 
 // Vérifier la connexion
 if ($connection->connect_error) {
-    die("Erreur de connexion à la base de données : " . $mysqli->connect_error);
+    die("Erreur de connexion à la base de données : " . $connection->connect_error);
 }
 
 // Requête pour récupérer le nombre total d'invités
